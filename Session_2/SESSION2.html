@@ -1,0 +1,75 @@
+    <!-- alt + z = word wrap -->
+    <!-- ctrl + / = comment -->
+<!-- border = paling luar dalam box/elemen -->
+<!-- padding = spasi dalam elemen-elemen -->
+<!-- margin = di paling luar border (spasi max mendekati objek) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- tr = table row -->
+    <table border="1px" cellpadding="30px">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Major</th>
+        </tr>
+        <tr>
+            <td>AB01</td>
+            <td>Michael</td>
+            <td>Information Systems</td>
+        </tr>  
+        <tr>
+            <td>AB02</td>
+            <td colspan="2">Business Analytics</td>
+        </tr>
+
+        <caption>Data Mahasiswa</caption>
+    </table>
+
+    
+    <form action="" method="">
+        <label for="input-text">Username</label>
+        <input type="text" id="input-text" name="Username" required >
+
+        <br>
+
+        <label for="input-password">Password</label>
+        <input type="password" name="" id="input-password">
+
+        <br>
+
+        <label for="input-file">Input File</label>
+        <input type="file" name="" id="input-file">
+
+        <br>
+
+        <select name="" id="input-select">
+            <option value="" selected hidden>Choose your major</option>
+            <option value="1">CompSci</option>
+            <option value="2">IS</option>
+            <option value="3">CybSec</option>
+        </select>
+
+        <br>
+
+        <input type="checkbox" name="" id="input-checkbox">
+        <label for="input-checkbox">Remember me</label>
+
+        <br>
+
+        <input type="radio" name="input-radio" id=""> Male
+        <input type="radio" name="input-radio" id=""> Female
+
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
