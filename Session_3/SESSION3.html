@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group</title>
+    <link rel="stylesheet" href="Style.css">  
+</head>
+
+<body>
+    <div class="box">
+
+    <header>REGISTRATION FORM</header>
+    
+    <form style="text-align: center;" action="" method="">
+        <div class="input-box">
+            <input type="text" id="input-text" name="Full Name" placeholder="Your Name" required>
+        </div>
+
+        <div class="input-box">
+            <input type="email" name="" id="input-email" placeholder="Email" required>
+        </div>
+
+        <div class="column">
+            <div class="input-box">
+                <label>Phone Number</label>
+                <input type="text" id="input-phone" name="Phone Number" placeholder="Phone Number" required>
+            </div>
+            <div class="input-box">
+                <label>Date of Birth</label>
+                <input type="date" name="" id="input-date">
+            </div>
+        </div>
+
+        <div class="gender">
+            <p>What is your gender?</p>
+            <input type="radio" name="input-radio" id=""> Male
+            <input type="radio" name="input-radio" id=""> Female
+        </div>
+
+        <p style="font-size: 10; padding: 20px; text-align: justify;">Choose your hobbies</p>
+        <div class="input-hobby">
+            <input type="checkbox" name="" id="input-checkbox">
+            <label for="input-checkbox">Drawing</label>
+
+            <input type="checkbox" name="" id="input-checkbox">
+            <label for="input-checkbox">Exercising</label>
+
+            <input type="checkbox" name="" id="input-checkbox">
+            <label for="input-checkbox">Sleeping</label>
+
+            <input type="checkbox" name="" id="input-checkbox">
+            <label for="input-checkbox">Gaming</label>
+        </div>
+
+        <br>
+        <p>Choose your major</p>
+        <select name="" id="input-select">
+            <option value="" selected hidden>Available majors</option>
+            <option value="1">Computer Science</option>
+            <option value="2">Information Systems</option>
+            <option value="3">Cyber Security</option>
+        </select>
+
+        <!-- <div class="input-addy">
+        <textarea name="" rows="3" cols="50">Make sure to type your address accordingly.</textarea>
+        </div> -->
+
+        <button type="submit" class="button">Submit</button>
+    </form>
+
+    <p>Click the "Submit" button once you have filled all of the requirements.</p>
+    </div>
+</body>
+</html>
