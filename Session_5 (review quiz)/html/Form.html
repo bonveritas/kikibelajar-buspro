@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <nav>
+        <h2 class="logo">RUMAKITA</h2>
+        <ul class="links">
+            <!-- a buat biar pindah halaman -->
+            <li><a href="">Explore</a></li> 
+            <li><a href="./Index.html">Home</a></li>
+            <li><a href="">Article</a></li>
+            <li><a href="./Form.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <form action="" method="get" class="form-group" id="form">
+
+            <h1 class="sign-header">Sign in to your account</h1>
+
+            <div class="form-group">
+                <label for="full name" pl>Full Name</label>
+                <input type="text" name="full name" id="full name" placeholder="Full Name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" placeholder="Password">
+            </div>
+            
+            <div class="form-group rd-group">
+                <label for="input-radio">Select your gender</label>
+                <input type="radio" name="input-radio" id=""> Male
+                <input type="radio" name="input-radio" id=""> Female
+            </div>
+
+            <label for="rl-group">Select your role</label>
+            <select name="" id="rl-group" class="form-group rl-group">
+                <option value="1">Buyer</option>
+                <option value="2">Renter</option>
+                <option value="3">Seller</option>
+            </select>
+
+            <div class="form-group ck-group">
+                <input type="checkbox" name="terms" id="terms">
+                <label for="">Agree to terms and conditions</label>
+            </div>
+
+            <button type="submit">Sign In</button>
+
+            <p id="errorMessage" class="error-message"></p>
+            <p id="successMessage" class="success-message"></p>
+
+        </form>
+
+    </div>
+
+<script src="../JS/Script.js"></script>
+</body>
+</html>
