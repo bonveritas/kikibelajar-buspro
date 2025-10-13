@@ -1,6 +1,4 @@
 form.addEventListener("submit", function(event){
-    // untuk mencegah browser reload saat form
-    // disubmit > event.preventDefault()
     event.preventDefault()
     
     // ekstrak value dari html
@@ -11,7 +9,7 @@ form.addEventListener("submit", function(event){
     let pass = document.getElementById("pass").value
     let vpass = document.getElementById("vpass").value
 
-    // validation kosong
+    // validation
     if (username === ''){
         document.getElementById("errorMessage").innerHTML = "Username cannot be empty"
     }
@@ -29,43 +27,9 @@ form.addEventListener("submit", function(event){
     }
     else if (vpass !== pass){
         document.getElementById("errorMessage").innerHTML = "Password must match!"
-
     }
-
     else {
         document.getElementById("errorMessage").innerHTML = ""
         document.getElementById("successMessage").innerHTML = "Registration Success"
     }
-
-    // console.log('======================');
-    // console.log(username);
-    // console.log(email);
-    // console.log('======================');
-    // CONSOLE BUAT PRINT
 })
-
-// function alnum
-function isAlphanumeric(input){
-    let isAlphabetic = false
-    let isNumeric = false
-    let inputToProcess = input.toLowercase()
-
-    //  (START    ;      END         ; ACTION)
-    for (let i = 0; i <= input.length; i++){
-        if(inputToProcess[i] >= 'a' && inputToProcess[i] <= 'z'){
-            isAlphabetic = true
-            continue
-        }
-        if(inputToProcess[i] >= '0' && inputToProcess[i] <= '9'){
-            isNumeric = true
-            continue
-        }
-    }
-
-    if (isAlphabetic && isNumeric){
-        return true;
-    } 
-    else {
-        return false;
-    }   
-}
